@@ -9,3 +9,40 @@ html {
 body {
     margin: 0;
 }
+
+.one {
+    border: 1px solid blue;
+    position: relative;
+    top: 10px;
+    left: 20px;
+}
+
+.two {
+    /* position: relative; */
+    width: 20em;
+    height: 20em;
+    border: 1px solid green;
+}
+
+.three {
+    border: 1px solid orange;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    z-index: 1000001;
+}
+
+.four {
+    border: 1px solid purple;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    z-index: 1000000;
+}
+
+.five {
+    border: 1px solid black;
+    position: fixed;
+    top: 100px;
+    right: 0;
+}

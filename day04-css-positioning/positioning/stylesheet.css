@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Great Wishes';
+    src: url('GreatWishes.eot');
+    src: url('GreatWishes.eot?#iefix') format('embedded-opentype'),
+        url('GreatWishes.woff2') format('woff2'),
+        url('GreatWishes.woff') format('woff'),
+        url('GreatWishes.ttf') format('truetype'),
+        url('GreatWishes.svg#GreatWishes') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
