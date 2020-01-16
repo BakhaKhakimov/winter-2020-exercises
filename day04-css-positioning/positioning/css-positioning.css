@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background: transparent url('background-grid.png') left top repeat scroll;
+    font-size: 10px;
+}
+
+body {
+    margin: 0;
+    border: 1px solid red;
+    font-size: 10px;
+    padding: 1em;
+    
+    height: 240px;
+}
+
+.one {
+    font-size: 15px;
+    width: 10em;
+    height: 10em;
+    padding: 10px 20px 40px 5px;
+    /* margin: 2em 3em 1em 4em; */
+    margin: 0 auto;
+    border: 3px dashed blue;
+    border-bottom: 1rem solid blue;
+    overflow-y: hidden;
+    /* min-height: 5em;
+    max-height: 15em; */
+    border-radius: 50%;
+    -webkit-box-shadow: 0px 0px 70px -6px rgba(0,0,0,0.36);
+    -moz-box-shadow: 0px 0px 70px -6px rgba(0,0,0,0.36);
+    box-shadow: 0px 0px 70px -6px rgba(0,0,0,0.36);
+}
+
+.two {
+    margin-top: -1em;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #63aa63;
+    /* display: inline-block; */
+    padding: 1em;
+    width: 20em;
+    background: green;
+    opacity: 0.5;
+    border-radius: 3px;
+}
+
+.two > span {
+    border: 1px solid orangered;
+    opacity: 0.5;
+}

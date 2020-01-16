@@ -1,0 +1,11 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background: transparent url('background-grid.png') left top repeat scroll;
+}
+
+body {
+    margin: 0;
+}
