@@ -1,0 +1,83 @@
+@import 'variables/colors.scss';
+@import 'variables/fonts.scss';
+@import 'variables/sizes.scss';
+
+
+@import 'common/buttons.scss';
+
+body {
+    max-width: $max_page_width;
+    margin: 0 auto;
+}
+
+// headline 1
+// it is green because Client is stupid
+h1 {
+    color: $primary_color;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    color: $primary_color;
+}
+
+header {
+    border-bottom: 1px solid $primary_color;
+}
+
+h3 {
+    background-color: $primary_color;
+    color: $secondary_color;
+}
+
+main {
+    display: flex;
+    padding: 1.5 * $block;
+
+    > nav {
+        margin-right: 1em;
+
+        // main > nav a
+        a {
+            color: $primary_color;
+            font-size: 2em;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+
+
+
+
+article {
+    padding: 2em;
+
+    // article :nth-child(2) 
+    :nth-child(2) {
+        color: red;
+    }
+}
+
+// article:nth-child(2)
+article:nth-child(2) {
+
+}
+
+article {
+    
+    // article :nth-child(3)
+    :nth-child(3) {
+        color: blue;
+    }
+
+    // article:nth-child(3)
+    &:nth-child(3) {
+        color: blue;
+    }
+}
+
+@import 'footer.scss';
