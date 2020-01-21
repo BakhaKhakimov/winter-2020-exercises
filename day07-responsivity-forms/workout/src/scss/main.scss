@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Bangers', cursive;
+}
+
+body {
+    margin: 0;
+    background-image: url('/img/got-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    font-size: 2vw;
+}
+
+main {
+    flex-grow: 1;
+    background-color: rgba(0,0,0,0.6);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+
+    // main h1
+    h1 {
+        align-self: flex-end;
+    }
+}
