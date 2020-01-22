@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
+@import "variables";
+
+@font-face {
+  font-family: 'Indie Flower';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/indie-flower.woff2') format('woff2');
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 15px;
+  font-family: 'Indie Flower', sans-serif;
+}
+
+body {
+  margin: 0;
+
+  background-color: $color-bg-primary;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.page-title {
+  font-size: 2rem;
+  text-align: center;
+  margin: 4rem;
+}
+
+.rodriguez {
+  width: 100%;
+  height: auto;
+}
+
