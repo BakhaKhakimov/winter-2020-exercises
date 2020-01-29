@@ -1,0 +1,22 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0;
+  height: 100vh;
+}
+
+.bulb {
+  background-size: contain;
+  width: 250px;
+  height: 450px;
+}
+
+.bulb--off {
+  background-image: url('img/bulb-off.png');
+}
+
+.bulb--on {
+  background-image: url('img/bulb-on.png');
+}
