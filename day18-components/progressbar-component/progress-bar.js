@@ -34,10 +34,10 @@ class ProgressBar {
     );
 
     const btnPlus = this.element.querySelector('#plus');
-    btnPlus.addEventListener('click', () => this.increment());
+    btnPlus.addEventListener('mousedown', () => this.increment());
   
     const btnMinus = this.element.querySelector('#minus');
-    btnMinus.addEventListener('click', () => this.decrement());
+    btnMinus.addEventListener('mousedown', () => this.decrement());
 
     return this.element;
   }
