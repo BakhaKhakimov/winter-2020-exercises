@@ -79,6 +79,12 @@ function publishImages(done) {
   return gulp.src('src/img/**/*')
     .pipe(gulp.dest('dist/img'));
 }
+
+// Copy all js files from src/js into dist
+function publishJS(done) {
+  return gulp.src('src/js/**/*')
+    .pipe(gulp.dest('dist/js'));
+}
  
 // compile SCSS files
 function compileScss(done, for_production = false) {
@@ -114,6 +120,7 @@ function watchFiles(done) {
   gulp.watch("src/**/*.html", gulp.series(publishHtml, reload));
   gulp.watch("src/fonts/**/*", gulp.series(publishFonts, reload));
   gulp.watch("src/img/**/*", gulp.series(publishImages, reload));
+  gulp.watch("src/js/**/*", gulp.series(publishJS, reload));
   gulp.watch("src/scss/**/*.scss", gulp.series(compileScss, reload));
 }
  
@@ -140,31 +147,35 @@ exports.publish = gulp.series(
   cleanAssets, 
   publishHtml, 
   publishFonts, 
-  publishImages
+  publishImages,
+  publishJS,
 );
 
 exports.build_prod = gulp.series(
   cleanAssets, 
   publishHtmlProduction, 
   publishFonts, 
-  publishImages, 
-  compileScssProduction
+  publishImages,
+  publishJS,
+  compileScssProduction,
 );
 
 exports.build_dev = gulp.series(
   cleanAssets, 
   publishHtmlDevelopment, 
   publishFonts, 
-  publishImages, 
-  compileScssDevelopment
+  publishImages,
+  publishJS,
+  compileScssDevelopment,
 );
 
 exports.watch = gulp.series(
   cleanAssets, 
   publishHtmlDevelopment, 
   publishFonts, 
-  publishImages, 
+  publishImages,
+  publishJS,
   compileScssDevelopment, 
   serve, 
-  watchFiles
+  watchFiles,
 );
